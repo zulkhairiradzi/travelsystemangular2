@@ -1,0 +1,60 @@
+
+
+      <p class="links">
+      <a href="./"><div style="color:blue">back to main</div></a>
+          </p>
+    
+      <div>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+            <label for="travelName">Name</label>
+            <input type="text" class="form-control" id="travelName"
+            [(ngModel)]="model.travelName" name="travelName">
+            </div>
+            <div class="form-group">
+            <label for="startDate">Start Date</label>
+            <input type="text" class="form-control" id="startDate"
+            [(ngModel)]="model.startDate" name="startDate">
+            </div>
+            <div class="form-group">
+            <label for="endDate">End Date</label>
+            <input type="text" class="form-control" id="endDate"
+            [(ngModel)]="model.endDate" name="endDate">
+            </div>
+            <div class="form-group">
+            <label for="modeOfTravel">Mode of Travel</label>
+            <input type="text" class="form-control" id="modeOfTravel"
+            [(ngModel)]="model.modeOfTravel" name="modeOfTravel">
+            </div>
+            <div class="form-group">
+            <label for="ticketCost">Ticket cost</label>
+            <input type="text" class="form-control" id="ticketCost"
+            [(ngModel)]="model.ticketCost" name="ticketCost">
+            </div>
+            <div class="form-group">
+            <label for="airportCabCost">Home city airport cab cost</label>
+            <input type="text" class="form-control" id="airportCabCost"
+            [(ngModel)]="model.airportCabCost" name="airportCabCost">
+            </div>
+            <div class="form-group">
+            <label for="destAirportCabCost">Destination city airport cab cost</label>
+            <input type="text" class="form-control" id="destAirportCabCost"
+            [(ngModel)]="model.destAirportCabCost" name="destAirportCabCost">
+            </div>
+            <div class="form-group">
+            <label for="hotelCost">Hotel cost</label>
+            <input type="text" class="form-control" id="hotelCost"
+            [(ngModel)]="model.hotelCost" name="hotelCost">
+            </div>
+            <div class="form-group">
+            <label for="localConveyance">Local conveyance</label>
+            <input type="text" class="form-control" id="localConveyance"
+            [(ngModel)]="model.localConveyance" name="localConveyance">
+            </div>
+            
+      <button type="submit">Submit</button>
+   </form>
+          
+</div>
+    
+  

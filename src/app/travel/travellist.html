@@ -1,0 +1,29 @@
+<div class="Travel-List">
+
+    <table class="table" >
+    <thead>
+                <tr>
+                    
+                    <th style="width: 20%">
+                        Travel Desc
+                    </th>
+                    <th style="width: 40%">
+                        start date
+                    </th>
+                    <th style="width: 40%">
+                        end date
+                    </th>
+                    
+                </tr>
+                </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+        <td>{{item.travelName}}</td>
+        <td>{{parseData(item.startDate) | date}}</td>
+        <td>{{parseData(item.endDate) | date}}</td>
+    </tr>
+    </tbody>
+    
+</table>
+        
+</div>
